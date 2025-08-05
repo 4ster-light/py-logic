@@ -73,3 +73,9 @@ Only Python 3 or higher is required.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 for details.
+
+## 💝 Sponsor
+
+If you like this project, consider supporting me by buying me a coffee.
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/B0B41HVJUR)
