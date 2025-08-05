@@ -2,6 +2,14 @@
 
 Implementation of a logic formula parser and truth table generator in Python.
 
+## 📚 Table of Contents
+
+- [📜 Overview](#-overview)
+- [🛠 Usage](#-usage)
+- [📋 Requirements](#-requirements)
+- [📄 License](#-license)
+- [💝 Sponsor](#-sponsor)
+
 ## 📜 Overview
 
 This project is meant as educational material in order to learn about basic
@@ -17,7 +25,8 @@ popular language for beginners and it is easy to understand, you can find the
 whole blog post
 [here](https://aster.deno.dev/posts/introduction-to-interpreters-part-1/). This
 also has a second part
-[here](https://aster.deno.dev/posts/introduction-to-interpreters-part-2/) that
+[here](https://aster.deno.dev/posts/introduction-to-interpreters-part-2/) (which
+project you can also find [here](https://github.com/4ster-light/f-logic)) that
 goes even further explaining functional programming concepts in F# and
 showcasing its features for this use case.
 
