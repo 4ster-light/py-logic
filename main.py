@@ -5,12 +5,8 @@ from evaluator import TruthTableGenerator
 
 
 def debug(formula: str, tokens: list[Token], expression: Expression) -> None:
-    print(f"- Formula:\n  - {formula}")
-
-    print("- Tokens:")
-    for token in tokens:
-        print(f"  - {token}")
-
+    print(f"- Formula:\n  - {formula}", end="\n\n")
+    print("- Tokens:", *[f"  - {token}" for token in tokens], sep="\n", end="\n\n")
     print(f"- Expression:\n  - {expression}")
 
 
