@@ -14,7 +14,7 @@ class TokenType:
     Eof = "Eof"
 
 
-@dataclass
+@dataclass(frozen=True)
 class Token:
     type: str
     lexeme: Optional[str] = None

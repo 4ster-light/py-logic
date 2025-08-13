@@ -2,40 +2,39 @@ from dataclasses import dataclass
 from lexer import Token, TokenType
 
 
-@dataclass
 class Expression:
     pass
 
 
-@dataclass
+@dataclass(frozen=True)
 class Var(Expression):
     name: str
 
 
-@dataclass
+@dataclass(frozen=True)
 class Not(Expression):
     expression: Expression
 
 
-@dataclass
+@dataclass(frozen=True)
 class And(Expression):
     left: Expression
     right: Expression
 
 
-@dataclass
+@dataclass(frozen=True)
 class Or(Expression):
     left: Expression
     right: Expression
 
 
-@dataclass
+@dataclass(frozen=True)
 class Implies(Expression):
     left: Expression
     right: Expression
 
 
-@dataclass
+@dataclass(frozen=True)
 class Biconditional(Expression):
     left: Expression
     right: Expression
