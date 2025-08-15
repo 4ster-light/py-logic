@@ -23,12 +23,7 @@ simplicity and the fact that it is related to computer science.
 That is also the same reason the tutorial is written in Python, as it is a
 popular language for beginners and it is easy to understand, you can find the
 whole blog post
-[here](https://aster.deno.dev/posts/introduction-to-interpreters-part-1/). This
-also has a second part
-[here](https://aster.deno.dev/posts/introduction-to-interpreters-part-2/) (which
-project you can also find [here](https://github.com/4ster-light/f-logic)) that
-goes even further explaining functional programming concepts in F# and
-showcasing its features for this use case.
+[here](https://aster.deno.dev/posts/introduction-to-interpreters/).
 
 ## 🛠 Usage
 
@@ -73,7 +68,6 @@ P & Q -> R
   - Token(type='Eof', lexeme=None)
 - Expression:
   - Implies(left=And(left=Var(name='P'), right=Var(name='Q')), right=Var(name='R'))
-
 ```
 
 ## 📋 Requirements
