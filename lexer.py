@@ -1,4 +1,3 @@
-from typing import Optional
 from dataclasses import dataclass
 
 
@@ -17,7 +16,7 @@ class TokenType:
 @dataclass(frozen=True)
 class Token:
     type: str
-    lexeme: Optional[str] = None
+    lexeme: str | None = None
 
 
 class Lexer:
@@ -25,7 +24,7 @@ class Lexer:
         self._input = input
         self._position = 0
 
-    def _peek(self, offset: int = 0) -> Optional[str]:
+    def _peek(self, offset: int = 0) -> str | None:
         if self._position + offset < len(self._input):
             return self._input[self._position + offset]
         return None

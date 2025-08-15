@@ -57,6 +57,7 @@ F | F | F | T
 
 ```bash
 $ python main.py --debug
+
 Enter a logical formula (e.g., P & Q -> R, !A | B):
 
 P & Q -> R
@@ -72,6 +73,7 @@ P & Q -> R
   - Token(type='Eof', lexeme=None)
 - Expression:
   - Implies(left=And(left=Var(name='P'), right=Var(name='Q')), right=Var(name='R'))
+
 ```
 
 ## 📋 Requirements
