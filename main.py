@@ -11,7 +11,7 @@ def debug(formula: str, tokens: list[Token], expression: Expression) -> None:
 
 
 if __name__ == "__main__":
-    print("Enter a logical formula (e.g., P & Q -> R, !A | B):")
+    print("\nEnter a logical formula (e.g., P & Q -> R, !A | B):")
 
     try:
         formula = input("\n")
@@ -22,7 +22,9 @@ if __name__ == "__main__":
 
         if len(sys.argv) > 1 and sys.argv[1] == "--debug":
             debug(formula, tokens, expression)
+            print()
         else:
             TruthTableGenerator(expression, formula).generate_and_print()
+            print()
     except Exception as ex:
         print(f"Error: {ex}", file=sys.stderr)

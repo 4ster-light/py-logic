@@ -44,7 +44,6 @@ class TruthTableGenerator:
         self._expr = expr
         self._formula = formula
         self._variables = VariableExtractor().get_variables(self._expr)
-        self._num_variables = len(self._variables)
 
     def generate_and_print(self) -> None:
         var_headers = " | ".join(self._variables)
@@ -64,7 +63,7 @@ class TruthTableGenerator:
     def _generate_assignments(
         self, index: int, current: dict[str, bool]
     ) -> list[dict[str, bool]]:
-        if index == self._num_variables:
+        if index == len(self._variables):
             return [current.copy()]
 
         var = self._variables[index]
