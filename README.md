@@ -23,7 +23,7 @@ simplicity and the fact that it is related to computer science.
 That is also the same reason the tutorial is written in Python, as it is a
 popular language for beginners and it is easy to understand, you can find the
 whole blog post
-[here](https://aster.deno.dev/posts/introduction-to-interpreters/).
+[here](https://aster.deno.dev/posts/introduction-to-interpreters/), and for more advanced learners looking for a challenge you can find the F# version [here](https://github.com/4ster-light/f-logic).
 
 ## 🛠 Usage
 

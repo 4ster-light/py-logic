@@ -45,7 +45,7 @@ class Parser:
         self._tokens = tokens
         self._position = 0
 
-    def _consume(self, expected_type: str) -> None:
+    def _consume(self, expected_type: TokenType) -> None:
         if self._peek().type == expected_type:
             self._position += 1
         else:
