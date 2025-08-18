@@ -1,7 +1,8 @@
 from dataclasses import dataclass
+from enum import Enum
 
 
-class TokenType:
+class TokenType(Enum):
     LParen = "LParen"
     RParen = "RParen"
     NotOp = "NotOp"
@@ -15,7 +16,7 @@ class TokenType:
 
 @dataclass(frozen=True)
 class Token:
-    type: str
+    type: TokenType
     lexeme: str | None = None
 
 
